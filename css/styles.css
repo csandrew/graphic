@@ -34,17 +34,67 @@
             text-decoration: none;
             font-family: Kaushan Script, Static;
         }
+
+        nav ul li a:hover{
+            color: #aa8282;
+        }
+
         section {
             padding: 50px;
             text-align: center;
         
         }
-        #home video {
-            width: 100%;
-            border-radius: 10px;
-            max-width: 800px;
-            max-height: 300px;
+
+        #home {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 3rem;
+            font-family: cinzel, variable;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+        .reach-us-button {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        .reach-us-button:hover {
+            background-color: #0056b3;
+        }
+
+
         #about {
             background-color: rgb(121, 153, 169);
         }
@@ -84,7 +134,7 @@
         .gender{
             display: flex;
             flex-direction: row;
-            /* gap: 50%; */
+        
         }
         .gender input[type="radio"]{
             width: 10%;
