@@ -6,6 +6,9 @@
     <title>Graphics Designer</title>
     <!--css-->
     <link rel="stylesheet" href="css/styles.css">
+    <!--Font Awsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +18,8 @@
 </head>
 <body>
     <header>
-        <h1>Graphics Designer</h1>
+        <img src="images/SHdesign-bg-.png" alt="logo">
+        <!--<h1>Graphics Designer</h1>-->
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -34,15 +38,23 @@
             Your browser does not support the video tag.
         </video>
     </section>
-    
+
     <section id="about">
         <h2>About Us</h2>
-        <p>We are a creative graphics design agency dedicated to delivering top-quality visual solutions.</p>
+        <p>Welcome to SAMIRA HADID, your go-to destination for innovative web solutions & digital marketing. We are passionate about delivering high-quality services. Our team consists of skilled professionals dedicated to innovation, efficiency, and customer satisfaction. We leverage the latest technologies to create solutions that drive success. Whether you're a startup, business, or individual, we are committed to helping you achieve your goals. 
+            
+            <p>Let’s build something great together! </p>
+
+        
     </section>
     
     <section id="info-row">
         <div class="info-box" id="services">
-            <img src="images/services.jpg" alt="services">
+            <video controls>
+                <source src="C.S.ANDREW.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!--<img src="images/services.jpg" alt="services">-->
             <h2>Our Services</h2>
             <p>Marketing marterials, UI/UX, Motion Graphics, Social media graphics.</p>
         </div>
@@ -57,23 +69,67 @@
             <p>We collaborate with leading agencies worldwide.</p>
         </div>
     </section>
-    
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send</button>
+
+
+    <div id="contact">
+        <form action="#" >
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label>
+                <input class="input" type="text" name="name" id="name" required>
+            </fieldset>
+            <fieldset>
+                <legend>Contact Details:</legend>
+                <label for="email">Email:</label>
+                <input class="input" type="text" name="email" id="email" required>
+
+                <label class="label" for="phone">Phone</label>
+                <input type="text" name="phone" id="phone" required>
+            </fieldset>
+            <fieldset>
+                <legend>Other Information:</legend>
+                <label class="label" for="dob">Date of Birth</label>
+                <input class="input" type="text" name="dob" id="dob">
+
+                <label class="label" for="comments">Comments</label>
+                <textarea name="comments" rows="4" id=""></textarea>
+
+                <label class="label" for="gender">Gender</label>
+                <div class="gender"> 
+                    <input class="input" type="radio" id="female" value="female">
+                    <label class="label" for="female">Female</label>
+                    <input class="input" type="radio" id="male" value="male">
+                    <label class="label" for="male">male</label>
+                </div>
+            </fieldset>
+            <button>Submit</button>
+
         </form>
-    </section>
+
+    </div>
+
+
+            <footer style="background: #09395b; color: white; text-align: center; padding: 20px;">
+        <p>&copy; 2025 SamiraHadidWebsite. All rights reserved.</p>
+        <div style="margin-top: 10px;">
+            <a href="https://facebook.com" target="_blank" style="color: white; margin: 0 10px; font-size: 24px;">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" style="color: white; margin: 0 10px; font-size: 24px;">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" style="color: white; margin: 0 10px; font-size: 24px;">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" style="color: white; margin: 0 10px; font-size: 24px;">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </footer>
     
+    <!-- FontAwesome for icons -->
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+     
     <script src="script.js"></script>
     <script>
         document.getElementById("contactForm").addEventListener("submit", function(event) {
